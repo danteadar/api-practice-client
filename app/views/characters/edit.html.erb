@@ -1,0 +1,16 @@
+<h1>Update:</h1>
+
+<%= form_tag "/characters/#{@employee.id}", method: :patch do %>
+
+  <%= label_tag :character_name %>
+  <%= text_field_tag :character_name %>
+
+  <%= label_tag :location %>
+  <%= text_field_tag :location %>
+
+  <%= label_tag :quote %>
+  <%= text_field_tag :quote %>
+
+
+  <%= submit_tag "Update" %>
+  <% end %>

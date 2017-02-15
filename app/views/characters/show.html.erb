@@ -1,0 +1,6 @@
+
+<%= @character.character_name %> <br>
+<%= @character.location %> <br>
+<%= @character.quote %> <br><br>
+
+<%= button_to "Delete", "/characters/#{@character.id}", method: :delete %>
